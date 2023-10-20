@@ -1,0 +1,17 @@
+redtangle = rectangle(300, 150, "solid", "red")
+bluetangle1 = rectangle(300, 15, "solid", "blue")
+bluetangle2 = rectangle(15, 150, "solid", "blue")
+whitetangle1 = rectangle(300, 30, "solid", "white")
+redwhitetangle = overlay(whitetangle1, redtangle)
+
+Denmark = put-image(
+  rectangle(30, 250, "solid", "white"),
+  100, 75,
+  redwhitetangle)
+
+Bluetanglecollab = overlay(bluetangle1, Denmark)
+
+Norway = overlay-xy(bluetangle2, -92, -0, Bluetanglecollab)
+
+
+Norway
